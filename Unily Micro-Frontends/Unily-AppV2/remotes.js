@@ -1,0 +1,1 @@
+module.exports = {"uiLibrary":"http://localhost:4201/remoteEntry.js","oldUiLibrary":"http://localhost:4202/remoteEntry.js"}
