@@ -1,0 +1,21 @@
+<!-- HEADER -->
+<ui-button (clickEvent)="onNewClick()" [text]="getNewClickCount()"></ui-button>
+<old-ui-button (clickEvent)="onOldClick()" [text]="getOldClickCount()"></old-ui-button>
+{{pokemonStats}}
+<unily-header></unily-header>
+<main class="unily body-height unily-main" id="main" tabindex="-1">
+    <div class="relative">
+        <div *ngIf="connectionAlive">
+            <unily-site-nav></unily-site-nav>
+        </div>
+        <router-outlet></router-outlet>
+        <no-connection></no-connection>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<div>
+    <unily-footer></unily-footer>
+</div>
+
+<div toastContainer></div>
